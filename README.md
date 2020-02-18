@@ -1,14 +1,14 @@
 # @kodekeep/hapi-cors
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/hapi-cors/run-tests?label=tests)](https://github.com/kodekeep/hapi-cors/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.net/codecov/c/github/kodekeep/hapi-cors)](https://codecov.io/gh/kodekeep/hapi-cors)
-[![Minimum Node.js Version](https://badgen.net/npm/node/@kodekeep/hapi-cors)](https://www.npmjs.com/package/@kodekeep/hapi-cors)
-[![Latest Version](https://badgen.net/npm/v/@kodekeep/hapi-cors)](https://www.npmjs.com/package/@kodekeep/hapi-cors)
-[![Total Downloads](https://badgen.net/npm/dt/kodekeep/hapi-cors)](https://npmjs.org/package/@kodekeep/hapi-cors)
-[![License](https://badgen.net/npm/license/kodekeep/hapi-cors)](https://npmjs.org/package/@kodekeep/hapi-cors)
+[![Latest Version](https://badgen.net/npm/v/@kodekeep/hapi-cors)](https://npmjs.com/package/@kodekeep/hapi-cors)
+[![Software License](https://badgen.net/npm/license/@kodekeep/hapi-cors)](https://npmjs.com/package/@kodekeep/hapi-cors)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/hapi-cors/run-tests?label=tests)](https://github.com/kodekeep/hapi-cors/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/hapi-cors)](https://codeclimate.com/github/kodekeep/hapi-cors)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/hapi-cors)](https://codeclimate.com/github/kodekeep/hapi-cors)
+[![Total Downloads](https://badgen.net/npm/dt/kodekeep/hapi-cors)](https://npmjs.com/package/@kodekeep/hapi-cors)
 
-> CORS for hapi.js
->
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides CORS for hapi.
+
 ## Installation
 
 ```bash
@@ -37,6 +37,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+hapi CORS is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).
