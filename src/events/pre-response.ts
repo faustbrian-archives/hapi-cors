@@ -1,7 +1,11 @@
 import Hapi from "@hapi/hapi";
+
 import { config } from "../config";
 
-export const onPreResponse = (request: Hapi.Request, h: Hapi.ResponseToolkit) => {
+export const onPreResponse = (
+	request: Hapi.Request,
+	h: Hapi.ResponseToolkit
+) => {
 	if (!request.headers.origin) {
 		return h.continue;
 	}
@@ -19,15 +23,18 @@ export const onPreResponse = (request: Hapi.Request, h: Hapi.ResponseToolkit) =>
 		return h.continue;
 	}
 
-	response.headers["access-control-expose-headers"] = "content-type, content-length, etag";
+	response.headers["access-control-expose-headers"] =
+		"content-type, content-length, etag";
 	response.headers["access-control-max-age"] = config.get("maxAge");
 
 	if (request.headers["access-control-request-headers"]) {
-		response.headers["access-control-allow-headers"] = request.headers["access-control-request-headers"];
+		response.headers["access-control-allow-headers"] =
+			request.headers["access-control-request-headers"];
 	}
 
 	if (request.headers["access-control-request-method"]) {
-		response.headers["access-control-allow-methods"] = request.headers["access-control-request-method"];
+		response.headers["access-control-allow-methods"] =
+			request.headers["access-control-request-method"];
 	}
 
 	return h.continue;
